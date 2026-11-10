@@ -1,3 +1,15 @@
+# Current audit correction — 10 November 2026
+
+This section supersedes historical media availability and logo descriptions below.
+
+All six original CDN assets listed in the inventory returned HTTP 200 today. Each exact URL was independently found in the current official homepage HTML (147,368 bytes). Files are now self-hosted under `/assets/` with their original CDN basenames; existing WebP encoding is preserved. No stock or generated photographs were substituted. No image-hosting failure remains in the tested preview. Publication by TransNova establishes source provenance, not independent proof of how each photograph was produced or a new rights grant.
+
+The active `transnova-logo.svg` wraps an embedded raster of the complete original logo. It is not a redrawn vector. Preserve its 543:500 proportions. Earlier traced/reconstructed assets remain historical and are not substituted for the active original. Navigation, home signature, story and footer use the complete active asset.
+
+Business facts and original four story paragraphs remain unchanged. The late 1970s describes personal childhood exposure, never a business founding date. New headings are editorial, not new capabilities. Work gallery captions are visually suppressed; original alt text and dialog labels remain. Form stays demonstration-only and transmits nothing.
+
+---
+
 # TransNova — source content inventory
 
 **Audit date:** 10 November 2026 (Sydney). **Source of business facts:** https://transnovalogistics.com.au/ . The audited public website is a single homepage; the client-acquisition demo now organizes its verified content across eight pages, without introducing new service categories. This document maps all substantive client-facing claims to the original homepage section rather than adding claims.

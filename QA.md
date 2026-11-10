@@ -1,25 +1,17 @@
-# TransNova site — responsive/functional QA (revised)
+# QA / Atelier edition — 10 November 2026
 
-Date: 10 November 2026. Automated browser render used headless Chromium with local HTML/CSS/JS injected (network routing for external images blocked). This establishes **local UI behaviour**, not a remote Lighthouse score or CDN image success.
+## Performed
 
-## Pages and breakpoints
+- Inspected repository branches, PR #1 and latest three READY Vercel preview deployments before editing. Continued latest feature head `2592644`.
+- Chromium/Playwright responsive sweep: all eight routes at 1440 × 1000, 390 × 1000 and 320 × 1000. Zero horizontal overflow, zero page exceptions, zero broken source images after scrolling through lazy images. Empty dialog image before opening is intentionally excluded.
+- Two visual passes: first full-page desktop/mobile contact sheets exposed lazy-image test gaps, overly strong quote treatment and caption clutter; second pass loaded all imagery, softened quote/type, removed visible gallery captions, refined mobile controls. Final screenshots stored in `screenshots/`.
+- Actual scroll interaction: care scenes progressed 0 → 1 → 2; manual selection also passed. Hero observed after its opening animation. Reduced motion used for full-page capture and checked separately.
+- Passed gallery open, next via keyboard, Escape close; standards details opening; mobile menu open and Escape; invalid and valid demo form states. No form endpoint or storage introduced.
+- JavaScript syntax checks passed for all three scripts. All local href/src targets resolve; eight pages have noindex meta. Existing Vercel global noindex headers preserved.
+- Original source re-fetched; all six CDN URLs appear in official HTML and returned 200; local WebP copies load. Font files and OFL licenses self-hosted.
 
-All eight pages were rendered at 1440×900, 768×1024, 390×844, and 320×700. Total: **32 viewport/page checks**. The automated DOM width tests returned zero horizontal overflow issues after correcting a too-long CTA heading at 320 px. The five-item navigation exists across all pages. Source robots metadata appears on each.
+## Limits
 
-Screenshots captured for home, services, about, contact at desktop and iPhone widths. Mobile menu open/close via Escape passed. Contact form required-field validation passed. No injected-script exceptions reported.
+Chromium emulation is not testing physical iPhone/Android devices, Safari or Firefox. No Lighthouse score, measured 60fps, screen-reader audit or WCAG certification is claimed. Reference research was a visual/text/type study, not comprehensive interaction testing of every reference. All eight pages retain prior core layouts beneath current art direction; the home is substantially recomposed and assembly opening is now distinct from delivery.
 
-## Design restrictions
-
-- No visible `View image` overlays, directional-arrow glyphs or image captions.
-- Original work headings and descriptions are text sections, not captions on photographs.
-- Original services split into exactly two dedicated detail pages; 'Professional Customer Service' is treated as an original gallery category, not a new paid service.
-- Source-level logo screenshot recreated as SVG; the original brand vector is not available.
-- Active noindex in both meta and Vercel response config.
-- Form never transmits or retains user data.
-
-## Remaining checks / limitations
-
-- The photo CDN failed DNS lookup in the testing container; authentic image-loading on a real browser is **not yet confirmed**. Visitors get the typographic brand fallback when unavailable. Seek approved originals before final client presentation.
-- No full Lighthouse audit, video integration or user-approved production launch.
-- Browser automation used inline CSS/JS due to the test environment blocking localhost HTTP; it does not substitute for checking the actual Vercel preview.
-- Native gallery can be opened when source imagery loads; the remote image provider could not be tested here. Accessibility inspection should be repeated with real assets.
+Demo remains unapproved independent work. Contact form sends/stores nothing. Complete active logo is embedded raster inside SVG, not a fully redrawn vector. Source provenance of photos is verified against the business site; authorship and rights are not independently verified.

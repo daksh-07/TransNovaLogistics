@@ -82,9 +82,9 @@
   });
 
   const photographs = [
-    ['https://cloud.katana.nexigen.digital/katana/5ozBrS6MzncrUaGjnxJCVrTz92WWCTLftDbB06SR.webp', 'Premium Furniture Delivery'],
-    ['https://cloud.katana.nexigen.digital/katana/yAEGdFmosfU09n3DAdpWn50Ltx2opykpTCaUC0C4.webp', 'Furniture Assembly & Installation'],
-    ['https://cloud.katana.nexigen.digital/katana/JQg28pZeGNDFLDLYv9MEeSbDZdweSjNAb6UIrB1z.webp', 'Professional Customer Service']
+    ['/assets/5ozBrS6MzncrUaGjnxJCVrTz92WWCTLftDbB06SR.webp', 'Premium Furniture Delivery'],
+    ['/assets/yAEGdFmosfU09n3DAdpWn50Ltx2opykpTCaUC0C4.webp', 'Furniture Assembly & Installation'],
+    ['/assets/JQg28pZeGNDFLDLYv9MEeSbDZdweSjNAb6UIrB1z.webp', 'Professional Customer Service']
   ];
   const modal = document.querySelector('#gallery-dialog');
   const modalImage = document.querySelector('#gallery-image');
