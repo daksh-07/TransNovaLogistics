@@ -1,28 +1,25 @@
-# Quality assurance / handover
+# TransNova site — responsive/functional QA (revised)
 
-## Automated / local checks — performed on 10 November 2026
+Date: 10 November 2026. Automated browser render used headless Chromium with local HTML/CSS/JS injected (network routing for external images blocked). This establishes **local UI behaviour**, not a remote Lighthouse score or CDN image success.
 
-- Static HTML/CSS/JS, with no npm dependencies and no build necessary. `node --check site.js` passed.
-- Page contains source-verified work labels, contact links, business background, standards, image source URLs and demo-only form.
-- Native `details` accordion; browser validation + `aria-invalid` and live message; no form network request. Browser automation confirmed invalid-form feedback.
-- Browser automation confirmed gallery open, ArrowRight advancing image count, Escape close, and mobile navigation opening/closing. Background is inert when dialog is open.
-- Reduced-motion CSS and observer fallback; semantic landmarks and skip link. Without JavaScript, all page content remains visible.
-- SEO isolation: robots meta, robots.txt, Vercel X-Robots-Tag.
-- Headless Chromium layout checks at **320 × 740, 390 × 844, 768 × 1024, 1440 × 900** found **no horizontal document overflow and no JavaScript page exceptions**. This was a local markup/content-injection test, not a remote browser load.
+## Pages and breakpoints
 
-## Manual verification tasks prior to sharing (not confirmed yet)
+All eight pages were rendered at 1440×900, 768×1024, 390×844, and 320×700. Total: **32 viewport/page checks**. The automated DOM width tests returned zero horizontal overflow issues after correcting a too-long CTA heading at 320 px. The five-item navigation exists across all pages. Source robots metadata appears on each.
 
-1. Open Vercel preview in iPhone-sized and desktop browsers, inspect photography and actual colour matches. Source CDN imagery could not be inspected at full size through the content extraction interface; check aspect/crops on real devices.
-2. Test menu, `tel:` / `mailto:` links, gallery opening, arrows, keyboard close, validation feedback, and headings.
-3. Verify no console errors, broken original CDN image URLs, overflows or missing fonts.
-4. Confirm preview is publicly viewable by intended recipient or use Vercel's authorised share option; deployment protection may require login.
-5. Confirm business permission to reuse work-gallery images; keep preview separate and noindexed.
-6. Secure business approval and a secure enquiry endpoint before a future production launch.
+Screenshots captured for home, services, about, contact at desktop and iPhone widths. Mobile menu open/close via Escape passed. Contact form required-field validation passed. No injected-script exceptions reported.
 
-## Known limitations
+## Design restrictions
 
-- This **demo does not send or save enquiries**, by design.
-- No client video yet. Integration point documented in JS.
-- CDN images remain on the client's original hosting provider. In this testing environment, outbound requests to original image URLs were blocked; therefore **image load success, actual crops, dimensions and full visual QA could not be verified**. The image-bearing screens cannot be approved solely on these screenshots.
-- Contact details and claims reflect homepage snapshot of 10 November 2026; refresh audit before go-live.
-- Formal accessibility audit, Lighthouse, external image network inspection and real-device QA have not been performed and must not be claimed as complete.
+- No visible `View image` overlays, directional-arrow glyphs or image captions.
+- Original work headings and descriptions are text sections, not captions on photographs.
+- Original services split into exactly two dedicated detail pages; 'Professional Customer Service' is treated as an original gallery category, not a new paid service.
+- Source-level logo screenshot recreated as SVG; the original brand vector is not available.
+- Active noindex in both meta and Vercel response config.
+- Form never transmits or retains user data.
+
+## Remaining checks / limitations
+
+- The photo CDN failed DNS lookup in the testing container; authentic image-loading on a real browser is **not yet confirmed**. Visitors get the typographic brand fallback when unavailable. Seek approved originals before final client presentation.
+- No full Lighthouse audit, video integration or user-approved production launch.
+- Browser automation used inline CSS/JS due to the test environment blocking localhost HTTP; it does not substitute for checking the actual Vercel preview.
+- Native gallery can be opened when source imagery loads; the remote image provider could not be tested here. Accessibility inspection should be repeated with real assets.
