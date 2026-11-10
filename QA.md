@@ -15,3 +15,11 @@
 Chromium emulation is not testing physical iPhone/Android devices, Safari or Firefox. No Lighthouse score, measured 60fps, screen-reader audit or WCAG certification is claimed. Reference research was a visual/text/type study, not comprehensive interaction testing of every reference. All eight pages retain prior core layouts beneath current art direction; the home is substantially recomposed and assembly opening is now distinct from delivery.
 
 Demo remains unapproved independent work. Contact form sends/stores nothing. Complete active logo is embedded raster inside SVG, not a fully redrawn vector. Source provenance of photos is verified against the business site; authorship and rights are not independently verified.
+
+## Deployed verification
+
+Preview `dpl_9Rc9K8vfodqgu6rW6A1Gog3F9YQ6` is READY in the existing project, target null (preview), serving source commit `ff1c51f888ee1a07f5076732a8168da2634a9248`. Chromium visited all eight deployed routes using the supported Vercel review link: every route returned 200 with `X-Robots-Tag: noindex, nofollow, noarchive`, zero broken images and no desktop horizontal overflow. Evidence: `checks/deployed-results.json`; deployed home captures under `screenshots/`. Final desktop/mobile screenshot contact sheets reviewed across all eight pages after image loading and typography changes.
+
+Review URL: https://transnovalogistics-35t801wmy-dakshgolani5-4632.vercel.app/?_vercel_share=PluAp7OIXhj3IorZm5lCOUsCyIkzttNa
+
+Share access expires 11 November 2026 at 11:27 UTC. Protection settings were not disabled. No production alias or client domain changed.

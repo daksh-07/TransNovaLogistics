@@ -1,0 +1,66 @@
+[
+  {
+    "route": "/",
+    "status": 200,
+    "robots": "noindex, nofollow, noarchive",
+    "title": "Home | TransNova — Independent Design Demo",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "route": "/services/",
+    "status": 200,
+    "robots": "noindex, nofollow, noarchive",
+    "title": "Services | TransNova — Independent Design Demo",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "route": "/services/premium-furniture-delivery/",
+    "status": 200,
+    "robots": "noindex, nofollow, noarchive",
+    "title": "Premium Furniture Delivery | TransNova — Independent Design Demo",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "route": "/services/furniture-assembly-installation/",
+    "status": 200,
+    "robots": "noindex, nofollow, noarchive",
+    "title": "Furniture Assembly & Installation | TransNova — Independent Design Demo",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "route": "/our-work/",
+    "status": 200,
+    "robots": "noindex, nofollow, noarchive",
+    "title": "Our Work | TransNova — Independent Design Demo",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "route": "/about/",
+    "status": 200,
+    "robots": "noindex, nofollow, noarchive",
+    "title": "About TransNova | TransNova — Independent Design Demo",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "route": "/our-standards/",
+    "status": 200,
+    "robots": "noindex, nofollow, noarchive",
+    "title": "Standards | TransNova — Independent Design Demo",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "route": "/contact/",
+    "status": 200,
+    "robots": "noindex, nofollow, noarchive",
+    "title": "Contact | TransNova — Independent Design Demo",
+    "overflow": false,
+    "broken": 0
+  }
+]
