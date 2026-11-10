@@ -1,0 +1,8 @@
+/* Only uses source-verified TransNova standards; local interactions, no analytics. */
+(()=>{"use strict";const words=[
+"We assess access, identify potential challenges and plan deliveries carefully to protect furniture and property.",
+"Careful handling and transportation of premium furniture, with protective coverings and attention to detail from collection through to final placement.",
+"Professional furniture assembly and installation carried out by trained teams, with careful attention to quality, safety and detail."
+];const stage=document.querySelector(".studio-care-visual");const tabs=[...document.querySelectorAll(".studio-care-button")];const desc=document.querySelector("#studio-care-description");const number=document.querySelector("#studio-care-number");
+tabs.forEach((tab,i)=>tab.addEventListener("click",()=>{if(!stage)return;stage.dataset.scene=String(i);tabs.forEach((t,j)=>t.setAttribute("aria-pressed",String(i===j)));desc.textContent=words[i];number.textContent=String(i+1).padStart(2,"0")+" / 03"}));
+const object=document.querySelector(".studio-object-stage");if(object&&matchMedia("(pointer:fine)").matches&&!matchMedia("(prefers-reduced-motion: reduce)").matches){object.addEventListener("pointermove",e=>{let r=object.getBoundingClientRect();object.style.setProperty("--pointer-x",((e.clientX-r.left)/r.width-.5)*15+"px");object.style.setProperty("--pointer-y",((e.clientY-r.top)/r.height-.5)*9+"px")},{passive:true});object.addEventListener("pointerleave",()=>{object.style.setProperty("--pointer-x","0px");object.style.setProperty("--pointer-y","0px")})}})();
