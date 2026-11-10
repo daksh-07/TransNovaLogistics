@@ -24,7 +24,7 @@ Reviewed 10 November 2026. These are visual and UX **references only**. No layou
 
 **Typography:** DM Sans + DM Serif Display (Google Fonts, open font families served via Google Fonts; fallback Arial/Georgia). A disciplined neutral sans for systems, generous character-spacing in section labels and an occasional italic serif for emphasis. Editorial—not generic SaaS cards. Font network load is optional; local fallbacks work.
 
-**Colours:** warm mineral paper `#f1f0eb`, dark evergreen-charcoal `#18201e`, neutral ecru, muted stone `#a68f72`. This is a **supporting redesign palette** pending visual confirmation of the official logo colours, not a claim to be the existing brand system. The original logo should be reviewed by the client before approval.
+**Updated palette on receiving the screenshot:** navy `#10263b`, deep midnight `#0a1b2b`, cool fog `#e4edef`, chalk ivory `#f8f7f1`, and restrained original-mark lime `#80cb1d`. The previous ecru/evergreen palette was abandoned at user request. The identity source now is the client screenshot; the full-logo SVG is a vector traced approximation and the navigation variant is a clearly documented wordmark adaptation.
 
 **Photography:** reuse three original work images from the client site and the first homepage image. Use object-fit crops, varied aspect ratios, open space and genuine original gallery captions. Images are never replaced by stock imagery or generated projects.
 
@@ -34,4 +34,7 @@ Reviewed 10 November 2026. These are visual and UX **references only**. No layou
 
 **Mobile:** change composition, not simply scale desktop. Text precedes photo; large tap targets; single-column gallery; self-contained menu and modal; no horizontal scrolling.
 
-**Constraints:** Build remains a single homepage; no speculative content, expanded services, testimonials, pricing, marketing statistics, new SEO pages or geographic claims.
+**Updated scope:** By subsequent explicit user request, the concept now has eight linked pages, including two service detail pages for *only the two existing documented services*, a gallery, story, standards and contact. No speculative content, expanded services, testimonials, pricing, marketing statistics, new geographic claims or fake project images. The interaction language is text links and a caption-free lightbox, not badge/card/arrow overlays.
+
+
+**Design revision:** The original request selected a warm editorial split hero; after seeing the client-provided logo, the direction was revised to cool-blue brand architecture and a cream/green logotype with large, staggered typographic statements, clean service rows, asymmetric editorial photography, no visible image descriptions/captions, and no decorative directional arrows. No 3D, fake photo shoot or faux dashboard elements were introduced.

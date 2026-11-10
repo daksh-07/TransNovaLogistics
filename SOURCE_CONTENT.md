@@ -1,6 +1,6 @@
 # TransNova — source content inventory
 
-**Audit date:** 10 November 2026 (Sydney). **Source of business facts:** https://transnovalogistics.com.au/ . The audited public website is a single homepage. This document maps all substantive client-facing claims to the original homepage section rather than adding claims.
+**Audit date:** 10 November 2026 (Sydney). **Source of business facts:** https://transnovalogistics.com.au/ . The audited public website is a single homepage; the client-acquisition demo now organizes its verified content across eight pages, without introducing new service categories. This document maps all substantive client-facing claims to the original homepage section rather than adding claims.
 
 ## Business identity / positioning
 
@@ -60,7 +60,30 @@ These URLs are links already hosted by the business's website provider, **not co
 ## Editorial decisions / unverified material
 
 - New display headings “Care isn't an afterthought. It's the standard.”, “A lifelong respect for quality furniture.”, and “Let's connect.” are editorial introductions, not additional measurable promises or certifications.
-- The visually designed `TRANSNOVA` text wordmark is **a typographic demo treatment**, not represented as a certified reproduction of the current logo.
+- The SVG files `assets/transnova-logo.svg` (vector traced from the logo in the customer-provided screenshot) and `assets/transnova-wordmark.svg` (simplified horizontal adaptation of its cream/green typography) are **design-demo recreations**, not an original, legally supplied brand vector. The letterforms and emblem may not be pixel-perfect; request the brand source file for final sign-off.
 - No video supplied; no video is shown.
 - Demo form **never sends, stores, or forwards** data. Original source form success text was not copied as proof of working submissions.
-- No separate service pages or geographic claims beyond original site text.
+- Two dedicated pages for the two services already listed on the original site. These are information-architecture changes, not new services, offerings, SEO claims or geographic claims.
+
+## Multi-page mapping (requested 10 November 2026)
+
+| Demo page | Exact audited facts used | Original homepage source |
+|---|---|---|
+| `/` | brand slogan; overview; primary services; 6–8 weeks training; founder quote; contact invitation | Beyond Delivery; Our Work; Standards; Story |
+| `/services/` | only two service categories and original descriptions | Our Work gallery |
+| `/services/premium-furniture-delivery/` | careful handling, transportation, protective coverings, collection and final placement | Premium Furniture Delivery tile |
+| `/services/furniture-assembly-installation/` | trained teams, assembly, installation, safety, quality and detail | Furniture Assembly & Installation tile |
+| `/our-work/` | exactly three original work/gallery categories with their descriptions in a **separate non-image editorial section**; photographs have no visible captions | Our Work gallery |
+| `/about/` | founder's original four story paragraphs in full; original logo traced from supplied screenshot | From Humble Beginnings story + screenshot supplied by client-acquisition team |
+| `/our-standards/` | team training and six published standards (plus promise as a repeated statement) | Our Standards & Commitment |
+| `/contact/` | official phone, email, address, hours and original fields; form clearly demo-only | Contact TransNova |
+
+Service sub-points appearing in the individual service pages only enumerate words already present in the matching service description. No paid package, pricing, distance, capacity, certification, location or testimonial is asserted.
+
+## Logo handling
+
+The logo screenshot furnished by the user shows a lime-green truck, a handshake illustration and cream/green TRANSNOVA typography on a black background. The vector reconstruction was made by colour segmentation / contour tracing of that screenshot; its shapes are approximation to the raster reference, **not** a substitute for the source brand master file. Original image reference: customer-provided screenshot (10 November 2026). No fabricated logo symbol has been substituted.
+
+## CDN availability
+
+The original photography host could not be resolved from the test environment. The static pages retain the original asset URLs; media fallbacks are typographic designs, not stock/AI photographs nor depictions of a delivery project. Real image display and hotlink permission require confirmation from the client's browser and approval. On failure a gallery button is disabled, rather than opening a broken photo.
